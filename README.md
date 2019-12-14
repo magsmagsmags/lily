@@ -1,21 +1,28 @@
 # lily
 
-# Unit 04 Web APIs Homework: Code Quiz
+# Project title
+**Quiz Application**
+* *Desc.*
+* https://github.com/magsmagsmags/lily.git
+* https://magsmagsmags.github.io/lily/
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive challenges. In this homework assignment, your challenge is to build a code quiz with multiple-choice questions.
+
+# Motivation
+ Build a code quiz with multiple-choice questions.
 
 
-## Instructions
+# Requirements
 
-From scratch, build a timer-based quiz application that stores high scores client-side. Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+* A timer-based quiz application that stores high scores client-side. 
+* Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
 ```
 As a coding bootcamp student
-I want to take a timed quiz on JavaScript fundamentals that stores high scores
+I want to take a timed quiz on an interesting topic that stores high scores
 so that I can gauge my progress compared to my peers
 ```
 
-How do you deliver this? Here are some guidelines:
+*Guidelines:*
 
 * Play proceeds as follows:
 
@@ -34,6 +41,34 @@ How do you deliver this? Here are some guidelines:
 ![code quiz](./Assets/04-Web-APIs-homework-demo.gif)
 
 
+
+# Code style
+* HTML
+* CSS
+* js-standard-style
+
+# Installation
+Visit the web app at: https://magsmagsmags.github.io/lily/
+
+# How to use?
+1. Load the web app at https://magsmagsmags.github.io/lily/
+1. x
+1. x
+    1. x
+    1. x
+1. x
+1. x
+
+# Contribute
+Please reach out to me via Slack (Mags Kiefer) or at sheakiefer@gmail.com for code suggestions, critiques, feedback, or offers to collaborate. 
+
+# Credits
+
+* Brittany Taylor
+* Israel Medina
+* Eric Scott
+
+--------------------------------
 ### Hints
 
 * Store your questions as an array of objects in a separate file, `questions.js`, that follows this format:
