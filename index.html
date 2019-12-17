@@ -7,24 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz</title>
 
-    <!-- <RESET link rel= "stylesheet" href="assets/css/2reset.css" -->
-    <link rel="stylesheet" href="assets/reset.css">
-
-
     <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/ccs/style.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 
 </head>
 
 <body>
 
+    <h1>Nastily Exhausting Wizarding Test (N.E.W.T.)</h1>
 
+    <div class="container">
 
+        <div class="quiz-container">
+            <div id="quiz"></div>
+            <br>
+            <br>
+        </div>
 
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
 
+        <div id="results"></div>
 
+    </div> <!-- /// main container div-->
 
+    <footer> Copyright 2019 </footer>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -38,7 +51,8 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
-    <footer> Copyright 2019 </footer>
+
+
     <script src="script.js"> </script> <!-- Javascript link -->
 
 </body>
