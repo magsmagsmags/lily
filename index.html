@@ -7,11 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz</title>
 
-    <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
-    <link rel="stylesheet" href="assets/ccs/style.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
+    <link rel="stylesheet" href="assets/ccs/style.css">
+
+
 
 
 
@@ -20,6 +26,31 @@
 <body>
 
     <h1>Nastily Exhausting Wizarding Test (N.E.W.T.)</h1>
+
+    <div class="welcome">
+        <br>
+        <div class="jumbotron">
+            <h2 class="display-4">Welcome</h2>
+            <p class="lead">
+                <p> This quiz will have five questions to test your knowledge.</p>
+            </p>
+            <hr class="my-4">
+            <p> This quiz will have five questions to test your knowledge.</p>
+
+            <p> You will have 60 seconds total to answer all five questions. Think speed! Your final score will be based
+                on amount of time remaining and correct answers.</p>
+
+            <p> Each incorrect answer will result in a 10 second time penalty.</p>
+
+            <p> At the end you will be able to enter your initials and track your high score.</p>
+
+            <p> GOOD LUCK!</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button" id="start">START!</a>
+            </p>
+        </div>
+        <br>
+    </div> <!-- welcome div-->
 
     <div class="container">
 
@@ -32,12 +63,24 @@
         <button id="previous">Previous Question</button>
         <button id="next">Next Question</button>
         <button id="submit">Submit Quiz</button>
+        <br>
 
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br>
         <div id="results"></div>
+
+
 
     </div> <!-- /// main container div-->
 
     <footer> Copyright 2019 </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -52,6 +95,16 @@
         crossorigin="anonymous"></script>
 
 
+    <script>
+        $(document).ready(function () {
+            // Initial state of all divs
+            container.style.display = "none";
+
+            $("#start").on("click", function () {
+                welcome.style.display = "none";
+                container.style.display = "block";
+
+    </script>
 
     <script src="script.js"> </script> <!-- Javascript link -->
 

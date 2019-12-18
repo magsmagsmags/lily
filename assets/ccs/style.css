@@ -23,6 +23,24 @@ h1{
   color: #fff;
   font-family: Palatino, serif;
 }
+
+h2 {
+  font-weight: 200;
+  margin: 0px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #8c1903;
+  color: #fff;
+  font-family: Palatino, serif;
+}
+
+.jumbotron {
+  background-color: #8c1903;
+  color: #8c1903;
+  font-family: Palatino, serif;
+
+}
+
 .question{
   font-size: 30px;
   margin-bottom: 10px;
@@ -53,6 +71,18 @@ button:hover{
     background-color: #490103;
 }
 
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  background-color: #8c1903;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 25px;
+  width: 150px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
 
 
 
