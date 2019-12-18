@@ -19,8 +19,9 @@ h1{
   margin: 0px;
   padding: 10px;
   font-size: 20px;
-  background-color: #9f7dd3;
+  background-color: #8c1903;
   color: #fff;
+  font-family: Palatino, serif;
 }
 .question{
   font-size: 30px;
@@ -39,7 +40,7 @@ h1{
 button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
-    background-color: #9f7dd3;
+    background-color: #8c1903;
     color: #fff;
     border: 0px;
     border-radius: 3px;
@@ -49,7 +50,7 @@ button{
     margin-bottom: 20px;
 }
 button:hover{
-    background-color: #bfa9e0;
+    background-color: #490103;
 }
 
 
@@ -90,10 +91,10 @@ footer {
     width: 100%;
     color: #ffffff;
     height: 50px;
-    background-color:#9f7dd3;
+    background-color: #8c1903;
     padding: 10px;
-    border-top: 8px solid #bfa9e0;
-    border-color: #bfa9e0;
+    border-top: 8px solid #fdb20d;
+    border-color: #fdb20d;
     text-align: center;
   }
   
