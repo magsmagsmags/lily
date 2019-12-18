@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="assets/ccs/style.css">
 
 
+    <script>
+        function myFunction() {
+            document.getElementById("welcome").style.display = "none";
+            document.getElementById("container").style.display = "block";
+        }
 
+    </script>
 
 
 </head>
@@ -27,7 +33,7 @@
 
     <h1>Nastily Exhausting Wizarding Test (N.E.W.T.)</h1>
 
-    <div class="welcome">
+    <div id="welcome">
         <br>
         <div class="jumbotron">
             <h2 class="display-4">Welcome</h2>
@@ -47,12 +53,13 @@
             <p> GOOD LUCK!</p>
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#" role="button" id="start">START!</a>
+                <button onclick="myFunction()">Click me</button>
             </p>
         </div>
         <br>
     </div> <!-- welcome div-->
 
-    <div class="container">
+    <div id="container" style="display:none;">
 
         <div class="quiz-container">
             <div id="quiz"></div>
@@ -65,9 +72,6 @@
         <button id="submit">Submit Quiz</button>
         <br>
 
-        <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
         <br>
         <div id="results"></div>
 
@@ -75,7 +79,6 @@
 
     </div> <!-- /// main container div-->
 
-    <footer> Copyright 2019 </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -94,20 +97,14 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
-
-    <script>
-        $(document).ready(function () {
-            // Initial state of all divs
-            container.style.display = "none";
-
-            $("#start").on("click", function () {
-                welcome.style.display = "none";
-                container.style.display = "block";
-
-    </script>
-
     <script src="script.js"> </script> <!-- Javascript link -->
 
+
+
+
+
 </body>
+
+<footer> Copyright 2019 </footer>
 
 </html>
