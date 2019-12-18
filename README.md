@@ -1,4 +1,3 @@
-# lily
 
 # Project title
 **Quiz Application**

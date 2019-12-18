@@ -118,6 +118,8 @@ button:hover{
 #boxTimer {
   background-color: #8c1903;
   color: white;
+  width: 150px;
+  float: right;
 }
 
 #results {
