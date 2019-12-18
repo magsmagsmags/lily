@@ -28,10 +28,15 @@ h2 {
   font-weight: 200;
   margin: 0px;
   padding: 10px;
-  font-size: 15px;
+  font-size: 16px;
   background-color: #8c1903;
   color: #fff;
   font-family: Palatino, serif;
+}
+
+.display-4 {
+  font-size: 16px;
+
 }
 
 .jumbotron {
@@ -111,7 +116,8 @@ button:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding: 10px; 
-    background-color: #f3cb74
+    background-color: #f3cb74;
+    color: #8c1903; 
 }
 
 /*  */
