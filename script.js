@@ -65,6 +65,26 @@
         quizContainer.innerHTML = output.join("");
     }
 
+    //start countdown /////////////////////////
+
+    //create timer
+    var timer = 45;
+    var timerCountdownEl = $("#timerCountdown");
+    var timerReference = undefined;
+
+    timerReference = window.setInterval(function () {
+        timer--;
+        if (timer == 0) {
+            //When timer hits 0, move immediately to score screen.
+            showResults();
+            alert("Oh flobberworms! You ran out of time! Click 'Start Quiz Again' to get back on that broomstick and try again!");
+        } else {
+            timerCountdownEl.text(timer);
+        };
+    }, 1000);
+    //////////////////////////////////////////////////////
+
+
     function showResults() {
         // gather answer containers from our quiz
         var answerContainers = quizContainer.querySelectorAll(".answers");
@@ -90,6 +110,7 @@
                 // if answer is wrong or blank
                 // color the answers red
                 answerContainers[questionNumber].style.color = "red";
+                timer -= 10;
             }
         });
 
@@ -97,23 +118,6 @@
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
 
-    //start countdown /////////////////////////
-
-    //create timer
-    var timer = 60;
-    var timerCountdownEl = $("#timerCountdown");
-    var timerReference = undefined;
-
-    timerReference = window.setInterval(function () {
-        timer--;
-        if (timer == 0) {
-            //When timer hits 0, move immediately to score screen.
-            showResults();
-        } else {
-            timerCountdownEl.text(timer);
-        };
-    }, 1000);
-    //////////////////////////////////////////////////////
 
     function showSlide(n) {
         slides[currentSlide].classList.remove("active-slide");
@@ -147,7 +151,7 @@
     var resultsContainer = document.getElementById("results");
     var submitButton = document.getElementById("submit");
 
-    // display quiz right away
+    // display quiz 
     buildQuiz();
 
     var previousButton = document.getElementById("previous");
