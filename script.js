@@ -97,6 +97,24 @@
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
 
+    //start countdown /////////////////////////
+
+    //create timer
+    var timer = 60;
+    var timerCountdownEl = $("#timerCountdown");
+    var timerReference = undefined;
+
+    timerReference = window.setInterval(function () {
+        timer--;
+        if (timer == 0) {
+            //When timer hits 0, move immediately to score screen.
+            showResults();
+        } else {
+            timerCountdownEl.text(timer);
+        };
+    }, 1000);
+    //////////////////////////////////////////////////////
+
     function showSlide(n) {
         slides[currentSlide].classList.remove("active-slide");
         slides[n].classList.add("active-slide");
