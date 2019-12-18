@@ -47,17 +47,22 @@ so that I can gauge my progress compared to my peers
 * CSS
 * js-standard-style
 
+# Screenshots
+* ![Screenshot](/images/Screenshot1.png)
+* ![Screenshot](/images/Screenshot2.png)
+
 # Installation
 Visit the web app at: https://magsmagsmags.github.io/lily/
 
 # How to use?
 1. Load the web app at https://magsmagsmags.github.io/lily/
-1. x
-1. x
-    1. x
-    1. x
-1. x
-1. x
+1. Click the button labeled "Click to Begin Quiz" to start the quiz
+1. Select you answer for the first question, and click the button labeled "Next Question"
+    1. Follow the same procedure for Question two
+    1. After you have selected an answer for Question 3, click the button labeled "Submit"
+1. You may restart the quiz at any time by clicking the button labeled "Start Quiz Again!"
+    1. If you click this button before submitting your quiz, your progress on the current quiz will be lost
+1. View your score in the gold "Results" section after you have submittd your quiz
 
 # Contribute
 Please reach out to me via Slack (Mags Kiefer) or at sheakiefer@gmail.com for code suggestions, critiques, feedback, or offers to collaborate. 

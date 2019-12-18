@@ -5,13 +5,17 @@ body{
     color: #333;
     font-weight: 300;
     text-align: center;
-    background-color: #f8f6f0;
+    background-image: url("../images/hpbackground1.jpg");
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
     min-height: 100vh;
+}
+
+.quiz-container {
+  background-color: #f3cb74;
 }
 
 h1{
