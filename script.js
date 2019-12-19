@@ -32,17 +32,15 @@
     ];
 
     function buildQuiz() {
-        // we'll need a place to store the HTML output
+        //  store the output (HTML)
         var output = [];
 
-        // for each question...
         myQuestions.forEach((currentQuestion, questionNumber) => {
-            // we'll want to store the list of answer choices
+            // store answer choices
             var answers = [];
 
-            // and for each available answer...
             for (letter in currentQuestion.answers) {
-                // ...add an HTML radio button
+                // + radio button
                 answers.push(
                     `<label>
                <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -52,7 +50,7 @@
                 );
             }
 
-            // add this question and its answers to the output
+            // + to output
             output.push(
                 `<div class="slide">
              <div class="question"> ${currentQuestion.question} </div>
@@ -61,11 +59,11 @@
             );
         });
 
-        // finally combine our output list into one string of HTML and put it on the page
+        // put it on the page
         quizContainer.innerHTML = output.join("");
     }
 
-    //start countdown /////////////////////////
+    //countdown /////////////////////////
 
     //create timer
     var timer = 45;
@@ -75,48 +73,57 @@
     timerReference = window.setInterval(function () {
         timer--;
         if (timer == 0) {
-            //When timer hits 0, move immediately to score screen.
             showResults();
             alert("Oh flobberworms! You ran out of time! Click 'Start Quiz Again' to get back on that broomstick and try again!");
+            quizContainer.style.display = "none";
         } else {
             timerCountdownEl.text(timer);
         };
     }, 1000);
-    //////////////////////////////////////////////////////
+
 
 
     function showResults() {
-        // gather answer containers from our quiz
+        // quiz answer containers
         var answerContainers = quizContainer.querySelectorAll(".answers");
 
-        // keep track of user's answers
+        // user's answers
         let numCorrect = 0;
 
-        // for each question...
         myQuestions.forEach((currentQuestion, questionNumber) => {
-            // find selected answer
             var answerContainer = answerContainers[questionNumber];
             var selector = `input[name=question${questionNumber}]:checked`;
             var userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
             // if answer is correct
             if (userAnswer === currentQuestion.correctAnswer) {
-                // add to the number of correct answers
                 numCorrect++;
 
-                // color the answers green
                 answerContainers[questionNumber].style.color = "green";
             } else {
-                // if answer is wrong or blank
-                // color the answers red
+
                 answerContainers[questionNumber].style.color = "red";
                 timer -= 10;
             }
         });
 
-        // show number of correct answers out of total
+        // correct/total
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
+
+    // if (initials !== "") {
+    //     var submitBtn = document.getElementById("userInitials");
+
+    //     var currentScore = {
+    //        score: time,
+    //         initials: initials
+    //  };
+
+    //    resultsContainer.push(curentScore);
+    //    window.localStorage.setItem("results", JSON.stringify(resultsContainer));
+    //    console.log(currentScore)
+    //   }
+    // }
 
 
     function showSlide(n) {

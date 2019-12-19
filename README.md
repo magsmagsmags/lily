@@ -23,7 +23,6 @@
 
 * Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
 
-* Refer to the animated GIF below for a demonstration of the application functionality.
 
 
 # Code style
@@ -33,7 +32,9 @@
 
 # Screenshots
 * ![Screenshot](/images/Screenshot1.png)
-* ![Screenshot](/images/Screenshot2.png)
+* ![Screenshot](/images/screenshot2.png)
+* ![Screenshot](/images/screenshot3.png)
+* ![Screenshot](/images/screenshot4.png)
 
 # Installation
 Visit the web app at: https://magsmagsmags.github.io/lily/

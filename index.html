@@ -48,8 +48,6 @@
                 based
                 on amount of time remaining and correct answers.</p>
 
-            <p> Each incorrect answer will result in a 10 second time penalty.</p>
-
             <p> At the end you will be able to enter your initials and track your high score.</p>
 
             <p> GOOD LUCK!</p>
@@ -63,13 +61,12 @@
     </div> <!-- welcome div-->
 
     <div id="container" style="display:none;">
-
+        <!--Timer & counts down-->
+        <div class="col-sm text-right" id="boxTimer">
+            Timer:
+            <span id="timerCountdown">45</span> sec
+        </div>
         <div class="quiz-container">
-            <!--Timer & counts down-->
-            <div class="col-sm text-right" id="boxTimer">
-                Timer:
-                <span id="timerCountdown">45</span> sec
-            </div>
 
             <div id="quiz"></div>
             <br>
@@ -85,6 +82,10 @@
         <br>
         <div>
             <div id="results">Results: </div>
+            <p id="initials">
+                First and Last Initials: <input type="text" id="userInitials" max="2" />
+                <button id="submitInitials">Submit Initials</button>
+            </p>
         </div>
 
 

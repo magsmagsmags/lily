@@ -16,6 +16,7 @@ body{
 
 .quiz-container {
   background-color: #f3cb74;
+  width: 90%;
 }
 
 h1{
@@ -47,6 +48,7 @@ h2 {
   background-color: #8c1903;
   color: #8c1903;
   font-family: Palatino, serif;
+  width: 90%;
 
 }
 
@@ -114,6 +116,7 @@ button:hover{
   height: 400px;
   margin-top: 40px;
   margin-bottom: 20px; 
+  width: 90%;
 }
 #boxTimer {
   background-color: #8c1903;
@@ -127,7 +130,14 @@ button:hover{
     font-size: 15px;
     padding: 10px; 
     background-color: #f3cb74;
-    color: #8c1903; 
+    color: #8c1903;   
+    width: 90%;
+}
+
+#initials {
+  background-color: #f3cb74;
+  color: #8c1903; 
+  width: 90%;
 }
 
 /*  */
