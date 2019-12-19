@@ -1,6 +1,5 @@
 
-# Project title
-**Quiz Application**
+# **Quiz Application**
 * A timer-based quiz application that stores high scores client-side. 
 * https://github.com/magsmagsmags/lily.git
 * https://magsmagsmags.github.io/lily/

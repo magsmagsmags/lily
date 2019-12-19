@@ -20,7 +20,7 @@
             correctAnswer: "c"
         },
         {
-            question: "The visitor’s entrance to the Ministry of Magic is an abandoned red telephone booth in London. What is the code you must dial to get in?",
+            question: "What is the code you must dial to get into he visitor’s entrance to the Ministry of Magic?",
             answers: {
                 a: "1-3-1-3-1",
                 b: "4-2-7-7-9",
