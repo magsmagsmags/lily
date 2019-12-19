@@ -9,17 +9,52 @@
 
     <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
     <link rel="stylesheet" href="assets/ccs/style.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1>High Scores</h1>
-        <ol id="highscores">
 
-        </ol>
-        <button id="clear">Clear High Scores</button>
-        <a href="index.html"><button>Back to Homepage</button></a>
-    </div>
+    <div class=row>
+
+        <div class="col-md-6">
+
+            <img src="assets/images/highscore.gif" class="card-img-top" alt="clapclap">
+            <br>
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">High Scores!</h5>
+                    <p class="card-text">
+
+                        <div class="wrapper">
+                            <h1>High Scores</h1>
+                            <ol id="highscores">
+
+                            </ol>
+
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> </li>
+                    <li class="list-group-item"> </li>
+                    <li class="list-group-item"> </li>
+                </ul>
+                <div class="card-body">
+                    <button id="clear" class="card-link">Clear High Scores</button>
+                    <a href="index.html" class="card-link"><button>Back to Homepage</button></a>
+                </div>
+            </div>
+
+
+        </div> <!-- col 6-->
+    </div> <!-- row-->
+
 
     <script src="script.js"> </script> <!-- Javascript link -->
 </body>

@@ -139,6 +139,11 @@ button:hover{
   color: #8c1903; 
   width: 90%;
 }
+.card {
+  background-color: #f3cb74;
+  color: #8c1903; 
+
+}
 
 /*  */
 footer {
