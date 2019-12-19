@@ -66,7 +66,7 @@
     //countdown /////////////////////////
 
     //create timer
-    var timer = 45;
+    var timer = 60;
     var timerCountdownEl = $("#timerCountdown");
     var timerReference = undefined;
 
