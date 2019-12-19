@@ -31,10 +31,10 @@
 * js-standard-style
 
 # Screenshots
-* ![Screenshot](/images/Screenshot1.png)
-* ![Screenshot](/images/screenshot2.png)
-* ![Screenshot](/images/screenshot3.png)
-* ![Screenshot](/images/screenshot4.png)
+* ![Screenshot](/assets/images/Screenshot1.png)
+* ![Screenshot](/assets/images/screenshot2.png)
+* ![Screenshot](/assets/images/screenshot3.png)
+* ![Screenshot](/assets/images/screenshot4.png)
 
 # Installation
 Visit the web app at: https://magsmagsmags.github.io/lily/
